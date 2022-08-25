@@ -1,5 +1,5 @@
 # pedit
-Use a text editor to modify your `$PATH`
+Use a text editor to modify your `$PATH` where each directory is on its own line
 
 ## Installation
 
