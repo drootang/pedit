@@ -11,7 +11,7 @@ Use a text editor to modify your `$PATH` where each directory is on its own line
 ## Usage
 
 When you run your `pedit` alias from a shell, your `$EDITOR` will launch with a
-temp file containing all directories on your `$PATH`. Make changes to the
+temp file containing all directories on your `$PATH`, one per line. Make changes to the
 order, remove directories, *etc*. When you are happy with the changes, save the
 file and exit the editor. Your `$PATH` will be updated with the new list of
 directories.
