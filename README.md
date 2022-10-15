@@ -18,3 +18,8 @@ directories.
 
 If you exit your editor without saving, or there are no valid entries, the
 `$PATH` is not updated.
+
+You can optionall specify a different path-like environment variable to edit as the
+first argument on the command line, e.g.,
+
+    `pedit PYTHONPATH`
