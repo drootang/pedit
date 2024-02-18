@@ -9,13 +9,14 @@ else
     VAR=PATH
 fi
 TMP=$(mktemp $USER-pedit.XXXXXXXXXX)
-echo ${!VAR} | sed 's/:/\n/g' > $TMP
-$EDITOR $TMP
+eval "echo \$$VAR" | sed 's/:/\n/g' > $TMP
+${EDITOR:-vi} $TMP
 DATA=$(paste -sd : $TMP)
-if [[ -z ${DATA// /} ]] || [[ "${!VAR}" == "$DATA" ]] ; then
-    echo "${!VAR} not changed"
+CURRENT=$(eval echo -n \$$VAR)
+if [[ -z ${DATA// /} ]] || [[ "$CURRENT" == "$DATA" ]] ; then
+    eval "echo $VAR not changed"
 else
-    declare "$VAR=$DATA"
-    echo "${!VAR} updated"
+    eval "$VAR=\"$DATA\""
+    eval "echo $VAR updated"
 fi
 rm -f "$TMP"
