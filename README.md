@@ -1,9 +1,9 @@
 # pedit
-Use a text editor to modify your `$PATH` where each directory is on its own line
+Use your favorite text editor to modify and update your `$PATH`
 
 ## Installation
 
-1. Copy or move `pedit.sh` to whatever location you want.
+1. Copy or move `pedit.sh` to whatever permanent installation location you want.
 2. Add an alias to your `.profile`, `.bashrc`, *etc*. that *sources* `pedit.sh`:
 
     `alias pedit='source /path/to/pedit.sh`
@@ -19,7 +19,7 @@ directories.
 If you exit your editor without saving, or there are no valid entries, the
 `$PATH` is not updated.
 
-You can optionall specify a different path-like environment variable to edit as the
+You can optionally specify a different path-like environment variable to edit as the
 first argument on the command line, e.g.,
 
     pedit PYTHONPATH
