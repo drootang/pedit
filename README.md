@@ -6,7 +6,9 @@ Use your favorite text editor to modify and update your `$PATH`
 1. Copy or move `pedit.sh` to whatever permanent installation location you want.
 2. Add an alias to your `.profile`, `.bashrc`, *etc*. that *sources* `pedit.sh`:
 
-    `alias pedit='source /path/to/pedit.sh`
+```
+alias pedit='source /path/to/pedit.sh
+```
 
 ## Usage
 
