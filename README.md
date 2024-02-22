@@ -7,7 +7,7 @@ Use your favorite text editor to modify and update your `$PATH`
 2. Add an alias to your `.profile`, `.bashrc`, *etc*. that *sources* `pedit.sh`:
 
 ```
-alias pedit='source /path/to/pedit.sh
+alias pedit='source /path/to/pedit.sh'
 ```
 
 ## Usage
